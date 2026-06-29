@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sufyan-portfolio/static/css/main.7dc42c9a.css",
+    "main.js": "/sufyan-portfolio/static/js/main.ca5ef2ea.js",
+    "index.html": "/sufyan-portfolio/index.html",
+    "main.7dc42c9a.css.map": "/sufyan-portfolio/static/css/main.7dc42c9a.css.map",
+    "main.ca5ef2ea.js.map": "/sufyan-portfolio/static/js/main.ca5ef2ea.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7dc42c9a.css",
+    "static/js/main.ca5ef2ea.js"
+  ]
+}
