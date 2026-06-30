@@ -62,7 +62,7 @@ const Projects = () => {
               >
                 <div className="h-48 bg-primary overflow-hidden">
                   {project.image ? (
-                    <img src={project.image} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <img src={`${process.env.PUBLIC_URL}${project.image}`} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary to-secondary">
                       <span className="text-6xl">🍳</span>

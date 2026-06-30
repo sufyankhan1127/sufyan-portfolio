@@ -115,7 +115,7 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-accent/20 rounded-full blur-3xl scale-110 animate-pulse"></div>
               <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-accent/50 shadow-2xl shadow-accent/20">
-                <img src="/profile.png" alt="Mohd Sufyan Khan" className="w-full h-full object-cover" />
+                <img src={`${process.env.PUBLIC_URL}/profile.png`} alt="Mohd Sufyan Khan" className="w-full h-full object-cover" />
               </div>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}

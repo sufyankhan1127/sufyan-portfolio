@@ -21,7 +21,7 @@ const Resume = () => {
             <button onClick={() => setShowPreview(!showPreview)} className="bg-accent hover:bg-accentHover text-primary font-bold py-3 px-8 rounded-lg transition-colors duration-300">
               {showPreview ? 'Hide Preview' : 'View Resume'}
             </button>
-            <a href="/resume.pdf" download="Mohd_Sufyan_Khan_Resume.pdf" className="border-2 border-accent text-accent hover:bg-accent hover:text-primary font-bold py-3 px-8 rounded-lg transition-colors duration-300">
+            <a href={`${process.env.PUBLIC_URL}/resume.pdf`} download="Mohd_Sufyan_Khan_Resume.pdf" className="border-2 border-accent text-accent hover:bg-accent hover:text-primary font-bold py-3 px-8 rounded-lg transition-colors duration-300">
               Download Resume
             </a>
           </div>
@@ -29,7 +29,7 @@ const Resume = () => {
           {showPreview && (
             <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} transition={{ duration: 0.5 }} className="max-w-4xl mx-auto">
               <div className="bg-secondary rounded-lg p-4 border border-secondary">
-                <iframe src="/resume.pdf" title="Resume Preview" className="w-full h-[800px] rounded-lg" />
+                <iframe src={`${process.env.PUBLIC_URL}/resume.pdf`} title="Resume Preview" className="w-full h-[800px] rounded-lg" />
               </div>
             </motion.div>
           )}
@@ -44,8 +44,8 @@ const Resume = () => {
               </div>
               <div>
                 <p className="mb-2"><span className="text-accent font-medium">Education:</span> B.E. CSE, VTU</p>
-                <p className="mb-2"><span className="text-accent font-medium">Certification:</span> Oracle Generative AI Professional</p>
                 <p className="mb-2"><span className="text-accent font-medium">Experience:</span> 6+ Months</p>
+                <p className="mb-2"><span className="text-accent font-medium">Email:</span> sufyankhan.01127@gmail.com</p>
               </div>
             </div>
           </div>
