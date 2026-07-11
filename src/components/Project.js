@@ -3,17 +3,30 @@ import { motion } from 'framer-motion';
 
 const Projects = () => {
   const projects = [
-    {
-      title: 'UrbanEats – Food Delivery App',
-      tech: 'Java, JDBC, JSP, Servlets, MySQL',
-      image: '/urbaneats.png',
-      liveLink: null,
-      points: [
-        'Built a multi-user food delivery platform with restaurant listings, dynamic menus, cart, and order history.',
-        'Implemented individual authenticated user accounts for secure access.',
-        'Developed backend using JDBC for SQL operations and JSP with Servlets for server-side rendering.',
-      ],
-    },
+      {
+        title: 'Food Express – Food Delivery App',
+        tech: 'Spring Boot, Spring Security, Thymeleaf, PostgreSQL, Docker, Render',
+        image: '/foodexpress.png',
+        liveLink: 'https://food-express-qnae.onrender.com/',
+        points: [
+          'Built a production-grade food delivery platform with role-based authentication (Customer/Admin) and session-persistent shopping cart.',
+          'Implemented full CRUD operations for restaurant and menu management via secure admin dashboard with Spring Security 6.',
+          'Designed order lifecycle pipeline (Pending → Confirmed → Preparing → Out for Delivery → Delivered) with real-time status tracking.',
+          'Containerized with Docker and deployed on Render with Neon PostgreSQL for cloud-native scalability.',
+        ],
+      },
+      {
+        title: 'UrbanEats – Food Delivery App',
+        tech: 'Java, JDBC, JSP, Servlets, MySQL',
+        image: '/urbaneats.png',
+        liveLink: null,
+        points: [
+          'Built a multi-user food delivery platform with restaurant listings, dynamic menus, cart, and order history.',
+          'Implemented individual authenticated user accounts for secure access.',
+          'Developed backend using JDBC for SQL operations and JSP with Servlets for server-side rendering.',
+        ],
+      },
+
     {
       title: 'EBS Tracker – Expenses, Budget & Savings',
       tech: 'Spring Boot, Spring MVC, Hibernate (JPA), PostgreSQL, REST APIs, Render',
